@@ -1,0 +1,32 @@
+section{
+    position: relative;
+}
+img{
+    position: absolute;
+    height:500px;
+    width:500px;
+}
+div{
+    position: absolute;
+    background-color:rgba(0,0,0,0.6);
+    top:0;
+    overflow: hidden;
+}
+div h1{
+    text-align: center;
+    color:#fff;
+    padding-top: 35vh;
+    padding-left: 40%;
+    position: absolute;
+    overflow: hidden;
+}
+div:hover{
+    top:-500px;
+    transition: 2s;
+}
+img:hover+div{
+    height:500px;
+    width:500px;
+    top:-500px;
+    transition: 2s;
+}
